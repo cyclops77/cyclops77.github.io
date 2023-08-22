@@ -96,31 +96,20 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-      var loop_mobile = document.getElementById('looping_mobile');
-      var loop_web = document.getElementById('looping_web');
-        for (var i = 1; i < 12; i++) {
-            loop_mobile.innerHTML += `<div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="gallery-item h-100">
-                            <img src="assets/img/projek/`+i+`.jpeg" class="img-fluid" alt="">
-                            <div class="gallery-links d-flex align-items-center justify-content-center">
-                                <a href="assets/img/projek/`+i+`.jpeg" title="Gallery 1" class="glightbox preview-link"><i
-                                        class="bi bi-arrows-angle-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>`
-        }
-
-        for (var j = 12; j < 32; j++) {
-            looping_web.innerHTML += `<div class="col-xl-3 col-lg-4 col-md-6">
-                        <div class="gallery-item h-100">
-                            <img src="assets/img/projek/`+j+`.jpeg" class="img-fluid" alt="">
-                            <div class="gallery-links d-flex align-items-center justify-content-center">
-                                <a href="assets/img/projek/`+j+`.jpeg" title="Gallery 1" class="glightbox preview-link"><i
-                                        class="bi bi-arrows-angle-expand"></i></a>
-                            </div>
-                        </div>
-                    </div>`
-        }
+        const ko = ["Aplikasi Sidabes Jelas","Aplikasi Sidabes Jelas","Aplikasi Inspeksi Unit Smartbid","Aplikasi Lelang Smartbid","Aplikasi Lelang Smartbid","Aplikasi Presensi Smartbid","Aplikasi Presensi Smartbid",'Aplikasi Chatbot "Peabot" Smartbid','Aplikasi Chatbot "Peabot" Smartbid','Aplikasi Chatbot "Peabot" Smartbid','Aplikasi Chatbot "Peabot" Smartbid','Website Portal Berita Suara Pecari','Sitem SIA & Manajemen Barang PT. Dira Utama Jaya','Sitem SIA & Manajemen Barang PT. Dira Utama Jaya','Sistem Koperasi JatiUtama','Sistem Koperasi JatiUtama','Sistem Koperasi CV Bill Karya Sejahtera','Sistem Koperasi CV Bill Karya Sejahtera','Sistem Pemesanan Kue 99Bakery','Sistem CMS ASKRINDO','Sistem Bumdes Simpan Pinjam Desa Demung Situbondo','Sistem Edukasi E-Learning Universitas Jember','Sistem Media Forum Anak Kota Probolinggo','Sistem Jual Beli Produk Hidroponok','Sistem Jual Beli Produk Hidroponok','Sistem Penunjang Pengambilan Keputusan Penerimaan Karyawan Fakultas Ilmu Komputer','Sistem Informasi P2TP2A Dinas Sosial Kota Probolinggo','Sistem Informasi Dinas Sosial PPPA Kota Probolinggo','Website Lelang Smartbid','Sistem Penunjang Keputusan Metode Simple Aditive Weighting Pemilihan Karyawan','Sistem Informasi Pembelian Tiket Event Online','Sistem Informasi Pembelian Tiket Event Online'];
+        var loop_mobile = document.getElementById('looping_mobile');
+        var loop_web = document.getElementById('looping_web');
+          for (var i = 1; i <= ko.length; i++) {
+              loop_mobile.innerHTML += `<div class="col-xl-3 col-lg-4 col-md-6">
+                          <div class="gallery-item h-100">
+                              <img src="assets/img/projek/`+i+`.jpeg" class="img-fluid" alt="">
+                              <div class="gallery-links d-flex align-items-center justify-content-center">
+                                  <a href="assets/img/projek/`+i+`.jpeg" title="` + ko[(i-1)]+ `" class="glightbox preview-link"><i
+                                          class="bi bi-arrows-angle-expand"></i></a>
+                              </div>
+                          </div>
+                      </div>`
+          }
 
     </script>
 
